@@ -1,0 +1,12 @@
+noscript ul {
+    list-style: none;
+    padding: 0;
+}
+
+noscript a:hover, noscript a:focus {
+    filter: opacity(55%);
+}
+
+noscript a:focus {
+    outline: 1px dotted gray;
+}
