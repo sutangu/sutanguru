@@ -1,3 +1,7 @@
+noscript main {
+    padding: 1rem;
+}
+
 noscript ul {
     list-style: none;
     padding: 0;
