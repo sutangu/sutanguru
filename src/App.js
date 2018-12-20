@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import image from './images/images64';
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
     render() {
         return (
             <React.Fragment>
-                <header>
+                {/*<header>
                     <label>
                         <input type='radio' name='theme' value='dark'/>
                         dark
@@ -23,10 +23,11 @@ class App extends Component {
                         <input type='radio' name='theme' value='default'/>
                         default
                     </label>
-                </header>
+                </header>*/}
                 <main className="page">
                     <h1>sutangu</h1>
-                    <div>
+                    <h2>Opensourcænimous</h2>
+                    <div className='email'>
                         <a href="mailto:me@sutangu.ru">me@sutangu.ru</a>
                     </div>
                     <a href="https://stackoverflow.com/users/5266871/alexander-shtang">
@@ -39,17 +40,17 @@ class App extends Component {
                     </p>
                     <ul className='list'>
                         <li>
-                            <a href='https://wakatime.com/@sutangu' target='_blank'>
+                            <a className='glitch' href='https://wakatime.com/@sutangu' target='_blank' rel="noopener noreferrer">
                                 <img className='icon' src={ image.wakatime } alt='wakatime' height='25px'/>
                             </a>
                         </li>
                         <li>
-                            <a href='https://github.com/sutangu' target='_blank'>
+                            <a className='glitch' href='https://github.com/sutangu' target='_blank' rel="noopener noreferrer">
                                 <img className='icon' src={ image.github } alt='github' height='25px'/>
                             </a>
                         </li>
                         <li>
-                            <a href='https://www.last.fm/ru/user/Cu-Real' target='_blank'>
+                            <a className='glitch' href='https://www.last.fm/ru/user/Cu-Real' target='_blank' rel="noopener noreferrer">
                                 <img className='icon' src={ image.lastfm } alt='github' height='25px'/>
                             </a>
                         </li>
