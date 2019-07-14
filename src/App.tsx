@@ -1,32 +1,20 @@
 import React, { Component } from 'react';
+import Header from './components/header'
+import {inject, observer} from 'mobx-react';
 import './main.scss';
 import image from './images/images64';
 
+@inject('SutanguStore')
+@observer
 class App extends Component {
-    state = {
-        theme: 'default'
-    };
-
-    changeTheme = event => {
-        this.setState({
-            theme: event.currentTarget.value
-        });
-    };
-
     render() {
+        // @ts-ignore
+        const {SutanguStore} = this.props;
+
         return (
             <React.Fragment>
-                <header>
-                    <label>
-                        <input type='radio' name='theme' value='dark' onChange={this.changeTheme}/>
-                        dark
-                    </label>
-                    <label>
-                        <input type='radio' name='theme' value='default' onChange={this.changeTheme}/>
-                        default
-                    </label>
-                </header>
-                <main className="page" data-theme={this.state.theme}>
+                <Header/>
+                <main className="page" data-theme={SutanguStore.theme}>
                     <h1>sutangu</h1>
                     <h2>Opensourcænimous</h2>
                     <div className='email'>
