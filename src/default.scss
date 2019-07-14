@@ -1,0 +1,22 @@
+header {
+  background-color: paleturquoise;
+}
+
+main[data-theme='default'] {
+  .page {
+    text-align: center;
+  }
+
+  .email a {
+    color: brown;
+  }
+
+  .email a:hover {
+    color: crimson;
+  }
+
+  .email a:visited {
+    color: cornflowerblue;
+  }
+
+}

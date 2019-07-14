@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './main.scss';
 import image from './images/images64';
 
 class App extends Component {
     state = {
-        theme: ''
+        theme: 'default'
     };
 
-    defaultState = {
-        theme: 'default'
+    changeTheme = event => {
+        this.setState({
+            theme: event.currentTarget.value
+        });
     };
 
     render() {
         return (
             <React.Fragment>
-                {/*<header>
+                <header>
                     <label>
-                        <input type='radio' name='theme' value='dark'/>
+                        <input type='radio' name='theme' value='dark' onChange={this.changeTheme}/>
                         dark
                     </label>
                     <label>
-                        <input type='radio' name='theme' value='default'/>
+                        <input type='radio' name='theme' value='default' onChange={this.changeTheme}/>
                         default
                     </label>
-                </header>*/}
-                <main className="page">
+                </header>
+                <main className="page" data-theme={this.state.theme}>
                     <h1>sutangu</h1>
                     <h2>Opensourcænimous</h2>
                     <div className='email'>
