@@ -4,24 +4,42 @@ import './header.scss';
 
 @inject('SutanguStore')
 @observer
-class Header extends Component {
+class Header extends Component<any> {
     changeTheme = (event: any) => {
         event.preventDefault();
         // @ts-ignore
         const {SutanguStore} = this.props;
         SutanguStore.changeTheme(event.currentTarget.value);
     };
+
+    setLangItem = (lang: string) => {
+        const currLang = localStorage.getItem('lang');
+
+        return (
+            <label className={`${currLang === lang ? 'selected' : null}`}>
+                <input type="radio" name="chooseLang" onClick={this.props.switchLang.bind(lang)} value={lang}/>
+                {lang.toUpperCase()}
+            </label>
+        )
+    };
+
     render() {
         return (
             <header>
-                <label>
-                    <input type='radio' name='theme' value='darker' onChange={this.changeTheme} />
-                    darker
-                </label>
-                <label>
-                    <input type='radio' name='theme' value='lighter' onChange={this.changeTheme} defaultChecked={true} />
-                    lighter
-                </label>
+                <div>
+                    <label>
+                        <input type='radio' name='theme' value='darker' onChange={this.changeTheme} />
+                        darker
+                    </label>
+                    <label>
+                        <input type='radio' name='theme' value='lighter' onChange={this.changeTheme} defaultChecked={true} />
+                        lighter
+                    </label>
+                </div>
+                <div className='languages'>
+                    {this.setLangItem('ru')}
+                    {this.setLangItem('en')}
+                </div>
             </header>
         );
     }

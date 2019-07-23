@@ -7,10 +7,45 @@ header {
 
     &:hover {
       color: beige;
+      text-shadow: 1px 0 1px darkred;
+    }
+
+    &:active {
+      text-shadow: 2px 0 1px darkred;
     }
   }
 
   input {
     display: none;
   }
+}
+
+.languages {
+  display: flex;
+}
+
+input[name="chooseLang"] {
+  display: none;
+}
+
+.languages label:first-child {
+  border-right: 1px solid var(--dark-color);
+}
+
+.languages label {
+  cursor: pointer;
+  padding: .4rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--unselected-text);
+  font-weight: 600;
+}
+
+.languages label:hover {
+  color: var(--unselected-hover-text);
+}
+
+.languages label.selected {
+  color: var(--dark-color);
+  cursor: default;
 }

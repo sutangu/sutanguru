@@ -3,20 +3,27 @@ import Header from './components/header'
 import {inject, observer} from 'mobx-react';
 import './main.scss';
 import image from './images/images64';
+import tr from './helpers/translator';
 
 @inject('SutanguStore')
 @observer
 class App extends Component {
+    switchLang = (event: any) => {
+        localStorage.setItem('lang', event.currentTarget.value.toLowerCase());
+        this.forceUpdate();
+    };
+
     render() {
         // @ts-ignore
         const {SutanguStore} = this.props;
 
         return (
             <React.Fragment>
-                <Header/>
+                <Header switchLang={this.switchLang} />
                 <main className="page" data-theme={SutanguStore.theme}>
                     <h1>sutangu</h1>
-                    <h2>Opensourcænimous</h2>
+                    <h2>{tr('subtitle')}</h2>
+                    <h3>{tr('h3')}</h3>
                     <div className='email'>
                         <a href="mailto:me@sutangu.ru">me@sutangu.ru</a>
                     </div>
