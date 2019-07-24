@@ -21,7 +21,7 @@ class App extends Component {
             <React.Fragment>
                 <Header switchLang={this.switchLang} />
                 <main className="page" data-theme={SutanguStore.theme}>
-                    <h1>sutangu</h1>
+                    <h1>{tr('sutangu')}</h1>
                     <h2>{tr('subtitle')}</h2>
                     <h3>{tr('h3')}</h3>
                     <div className='email'>
