@@ -21,9 +21,9 @@ class App extends Component {
             <React.Fragment>
                 <Header switchLang={this.switchLang} />
                 <main className="page" data-theme={SutanguStore.theme}>
-                    <h1>{tr('sutangu')}</h1>
-                    <h2>{tr('subtitle')}</h2>
-                    <h3>{tr('h3')}</h3>
+                    <h1>{tr('main.sutangu')}</h1>
+                    <h2>{tr('main.subtitle')}</h2>
+                    <h3>{tr('main.h3')}</h3>
                     <div className='email'>
                         <a href="mailto:me@sutangu.ru">me@sutangu.ru</a>
                     </div>
