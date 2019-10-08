@@ -25,6 +25,38 @@ main {
         padding: 0;
         display: flex;
         justify-content: center;
+
+        li {
+            cursor: pointer;
+
+            .social-icon {
+                img {
+                    border-radius: 100% 0 50% 50% / 50% 50% 50% 50%;
+
+                    transition: all 140ms ease-in-out;
+
+                    &:hover {
+                        transition: all 200ms ease-in-out;
+                    }
+                }
+            }
+
+            .lastfm {
+                img {
+                    &:hover {
+                        background-color: #ba0000;
+                    }
+                }
+            }
+
+            .telegram {
+                img {
+                    &:hover {
+                        background-color: #41B4E6;
+                    }
+                }
+            }
+        }
     }
 
     .list li:not(:last-child) {

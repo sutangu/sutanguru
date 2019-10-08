@@ -6,8 +6,10 @@ header {
     font-size: 1.2rem;
     font-weight: 700;
     padding: 0 .8rem;
+    transition: all 140ms ease-in-out;
 
     &:hover {
+      transition: all 140ms ease-in-out;
       color: beige;
       text-shadow: 1px 0 1px darkred;
     }

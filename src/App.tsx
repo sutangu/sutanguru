@@ -3,6 +3,8 @@ import Header from './components/header'
 import {inject, observer} from 'mobx-react';
 import './main.scss';
 import image from './images/images64';
+import telegram from './images/telegram.svg'
+import lastfm from './images/last-fm-logo.svg'
 import tr from './helpers/translator';
 
 @inject('SutanguStore')
@@ -37,18 +39,23 @@ class App extends Component {
                     </p>
                     <ul className='list'>
                         <li>
-                            <a className='glitch' href='https://wakatime.com/@sutangu' target='_blank' rel="noopener noreferrer">
+                            <a className='social-icon' href='https://wakatime.com/@sutangu' target='_blank' rel="noopener noreferrer">
                                 <img className='icon' src={ image.wakatime } alt='wakatime' height='25px'/>
                             </a>
                         </li>
                         <li>
-                            <a className='glitch' href='https://github.com/sutangu' target='_blank' rel="noopener noreferrer">
+                            <a className='social-icon' href='https://github.com/sutangu' target='_blank' rel="noopener noreferrer">
                                 <img className='icon' src={ image.github } alt='github' height='25px'/>
                             </a>
                         </li>
                         <li>
-                            <a className='glitch' href='https://www.last.fm/ru/user/Cu-Real' target='_blank' rel="noopener noreferrer">
-                                <img className='icon' src={ image.lastfm } alt='github' height='25px'/>
+                            <a className='social-icon lastfm' href='https://www.last.fm/ru/user/Cu-Real' target='_blank' rel="noopener noreferrer">
+                                <img className='icon' src={ lastfm } alt='lastfm' height='25px'/>
+                            </a>
+                        </li>
+                        <li>
+                            <a className='social-icon telegram' href='https://t.me/sutangu' target='_blank' rel="noopener noreferrer">
+                                <img className='icon' src={ telegram } alt='telegram' height='25px'/>
                             </a>
                         </li>
                     </ul>
