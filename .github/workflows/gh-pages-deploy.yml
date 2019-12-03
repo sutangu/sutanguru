@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: GitHub Pages action
         env:
-          ACTIONS_DEPLOY_KEY: ${{ secrets.ALS_UBUNTU_DEPLOY_KEY }}
+          GITHUB_TOKEN: ${{ secrets.ALS_UBUNTU_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
         run: |
