@@ -12,6 +12,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ALS_UBUNTU_DEPLOY_KEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: ./public
+          SCRIPT_MODE: true
         run: |
           wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2.5.0/entrypoint.sh
           bash ./entrypoint.sh
+        with:
+          emptyCommits: false
