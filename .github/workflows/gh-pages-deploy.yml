@@ -16,5 +16,5 @@ jobs:
         run: |
           wget https://raw.githubusercontent.com/peaceiris/actions-gh-pages/v2.5.0/entrypoint.sh
           bash ./entrypoint.sh
-        with:
-          emptyCommits: false
+      with:
+        emptyCommits: false
