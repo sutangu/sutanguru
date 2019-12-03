@@ -1,2 +1,11 @@
-- name: GitHub Pages action
-  uses: peaceiris/actions-gh-pages@v2.5.1
+name: GH-Pages Deployment
+
+on: push
+
+jobs:
+  GH-Pages-Deployment-Sutanguru:
+    name: deploy to sutangu.ru
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v2.5.1
