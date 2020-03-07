@@ -14,9 +14,11 @@ main {
     height: 100vh;
 
     h1 {
+        align-self: start;
         font-family: 'Russo One', sans-serif;
         font-weight: 300;
         letter-spacing: 2px;
+        padding-left: 2rem;
     }
 
     .email {
@@ -28,10 +30,10 @@ main {
     }
 
     .list {
-        list-style: none;
-        padding: 0;
         display: flex;
         justify-content: center;
+        list-style: none;
+        padding: 0;
 
         li {
             cursor: pointer;
