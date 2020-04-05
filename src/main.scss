@@ -1,74 +1,74 @@
 body {
-    * {
+  * {
 
-    }
+  }
 }
 
 @import "darker";
 @import "lighter";
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  h1 {
+    align-self: start;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    padding-left: 2rem;
+  }
+
+  .email {
+    margin-bottom: 1rem;
+  }
+
+  .intro {
+    font-size: large;
+  }
+
+  .list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 
-    h1 {
-        align-self: start;
-        font-family: 'Russo One', sans-serif;
-        font-weight: 300;
-        letter-spacing: 2px;
-        padding-left: 2rem;
-    }
+    li {
+      cursor: pointer;
 
-    .email {
-        margin-bottom: 1rem;
-    }
+      .social-icon {
+        img {
+          border-radius: 100% 0 50% 50% / 50% 50% 50% 50%;
 
-    .intro {
-        font-size: large;
-    }
+          transition: all 140ms ease-in-out;
 
-    .list {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
-
-        li {
-            cursor: pointer;
-
-            .social-icon {
-                img {
-                    border-radius: 100% 0 50% 50% / 50% 50% 50% 50%;
-
-                    transition: all 140ms ease-in-out;
-
-                    &:hover {
-                        transition: all 200ms ease-in-out;
-                    }
-                }
-            }
-
-            .lastfm {
-                img {
-                    &:hover {
-                        background-color: #ba0000;
-                    }
-                }
-            }
-
-            .telegram {
-                img {
-                    &:hover {
-                        background-color: #41B4E6;
-                    }
-                }
-            }
+          &:hover {
+            transition: all 200ms ease-in-out;
+          }
         }
-    }
+      }
 
-    .list li:not(:last-child) {
-        margin-right: .8rem;
+      .lastfm {
+        img {
+          &:hover {
+            background-color: #ba0000;
+          }
+        }
+      }
+
+      .telegram {
+        img {
+          &:hover {
+            background-color: #41B4E6;
+          }
+        }
+      }
     }
+  }
+
+  .list li:not(:last-child) {
+    margin-right: .8rem;
+  }
 }
