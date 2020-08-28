@@ -11,57 +11,75 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 22px);
 
-  h1 {
-    align-self: start;
+  .launch-expect {
     font-family: 'Russo One', sans-serif;
-    font-weight: 300;
-    letter-spacing: 2px;
-    padding-left: 2rem;
+    font-size: 20rem;
+    font-weight: bolder;
+    color: silver;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    pointer-events: none;
   }
 
-  .email {
-    margin-bottom: 1rem;
-  }
-
-  .intro {
-    font-size: large;
-  }
-
-  .list {
+  .wrap {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
 
-    li {
-      cursor: pointer;
 
-      .social-icon {
-        img {
-          border-radius: 100% 0 50% 50% / 50% 50% 50% 50%;
+    h1 {
+      font-family: 'Russo One', sans-serif;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
 
-          transition: all 140ms ease-in-out;
+    .email {
+      margin-bottom: 1rem;
+    }
 
-          &:hover {
-            transition: all 200ms ease-in-out;
+    .intro {
+      font-size: large;
+    }
+
+    .list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+
+        .social-icon {
+          img {
+            border-radius: 100% 0 50% 50% / 50% 50% 50% 50%;
+
+            transition: all 140ms ease-in-out;
+
+            &:hover {
+              transition: all 200ms ease-in-out;
+            }
           }
         }
-      }
 
-      .lastfm {
-        img {
-          &:hover {
-            background-color: #ba0000;
+        .lastfm {
+          img {
+            &:hover {
+              background-color: #ba0000;
+            }
           }
         }
-      }
 
-      .telegram {
-        img {
-          &:hover {
-            background-color: #41B4E6;
+        .telegram {
+          img {
+            &:hover {
+              background-color: #41B4E6;
+            }
           }
         }
       }
