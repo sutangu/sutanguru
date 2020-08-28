@@ -60,6 +60,11 @@ class App extends Component {
 
             <ul className='list'>
               <li>
+                <a className='social-icon' href='https://steamcommunity.com/id/sutangu/' target='_blank' rel="noopener noreferrer">
+                  <img className='icon' src={image.steam} alt='steam' height='25px'/>
+                </a>
+              </li>
+              <li>
                 <a className='social-icon' href='https://wakatime.com/@sutangu' target='_blank' rel="noopener noreferrer">
                   <img className='icon' src={image.wakatime} alt='wakatime' height='25px'/>
                 </a>
