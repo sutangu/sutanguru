@@ -5,6 +5,7 @@ import './main.scss';
 import image from './images/images64';
 import telegram from './images/telegram.svg'
 import lastfm from './images/last-fm-logo.svg'
+import playkey from './images/playkey.svg'
 import tr from './helpers/translator';
 
 @inject('SutanguStore')
@@ -62,6 +63,11 @@ class App extends Component {
               <li>
                 <a className='social-icon' href='https://steamcommunity.com/id/sutangu/' target='_blank' rel="noopener noreferrer">
                   <img className='icon' src={image.steam} alt='steam' height='25px'/>
+                </a>
+              </li>
+              <li>
+                <a className='social-icon' href='https://welcome.playkey.net/lp/referral?ref=8305807' target='_blank' rel="noopener noreferrer">
+                  <img className='icon white-icon' src={playkey} alt='playkey' height='25px'/>
                 </a>
               </li>
               <li>
