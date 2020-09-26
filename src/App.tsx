@@ -91,6 +91,12 @@ class App extends Component {
                   <img className='icon' src={telegram} alt='telegram' height='25px'/>
                 </a>
               </li>
+              <li>
+                <a className='social-icon telegram -channel' href='https://t.me/whatreadnotread' target='_blank' rel="noopener noreferrer">
+                  <img className='icon' src={telegram} alt='telegram-channel' height='25px'/>
+                </a>
+                <div className="letter">ch</div>
+              </li>
             </ul>
           </div>
         </main>
