@@ -88,7 +88,7 @@ class App extends Component {
               </li>
               <li>
                 <a className='social-icon telegram' href='https://t.me/sutangu' target='_blank' rel="noopener noreferrer">
-                  <img className='icon' src={telegram} alt='telegram' height='25px'/>
+                  <img className='icon' src={telegram} alt='telegram-own' height='25px'/>
                 </a>
               </li>
               <li>
