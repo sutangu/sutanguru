@@ -1,12 +1,72 @@
 import React, { Component } from 'react';
-import Header from './components/header'
 import { inject, observer } from 'mobx-react';
+
+import Header from './components/header'
 import './main.scss';
+import tr from './helpers/translator';
+import { Social } from './interfaces/social';
+
 import image from './images/images64';
 import telegram from './images/telegram.svg'
 import lastfm from './images/last-fm-logo.svg'
 import playkey from './images/playkey.svg'
-import tr from './helpers/translator';
+
+const socials: Social[] = [
+  {
+    href: 'https://steamcommunity.com/id/sutangu/',
+    img: {
+      src: image.steam,
+      alt: 'steam'
+    }
+  },
+  {
+    href: 'https://welcome.playkey.net/lp/referral?ref=8305807',
+    img: {
+      addClass: 'white-icon',
+      src: playkey,
+      alt: 'playkey'
+    }
+  },
+  {
+    href: 'https://wakatime.com/@sutangu',
+    img: {
+      src: image.wakatime,
+      alt: 'wakatime'
+    }
+  },
+  {
+    href: 'https://github.com/sutangu',
+    img: {
+      src: image.github,
+      alt: 'github'
+    }
+  },
+  {
+    classes: 'lastfm',
+    href: 'https://www.last.fm/ru/user/Cu-Real',
+    img: {
+      src: lastfm,
+      alt: 'lastfm'
+    }
+  },
+  {
+    classes: 'telegram',
+    href: 'https://t.me/sutangu',
+    img: {
+      src: telegram,
+      alt: 'telegram-own'
+    }
+  },
+  {
+    classes: 'telegram -channel',
+    label: 'ch',
+    href: 'https://steamcommunity.com/id/sutangu/',
+    img: {
+      src: telegram,
+      alt: 'telegram-channel'
+    }
+  },
+];
 
 @inject('SutanguStore')
 @observer
@@ -14,6 +74,27 @@ class App extends Component {
   switchLang = (event: any) => {
     localStorage.setItem('lang', event.currentTarget.value.toLowerCase());
     this.forceUpdate();
+  };
+
+  getLinkList = () => {
+    return socials.map(social => (
+      <li>
+        <a
+          className={ `social-icon ${ social.classes }` }
+          href={ social.href }
+          target='_blank'
+          rel="noopener noreferrer"
+        >
+          <img
+            className={ `icon ${ social.img.addClass } ` }
+            src={ social.img.src }
+            alt={ social.img.alt }
+            height='25px'
+          />
+        </a>
+        { social.label && <div className="letter">{ social.label }</div> }
+      </li>
+    ));
   };
 
   render() {
@@ -61,48 +142,7 @@ class App extends Component {
             </a>
 
             <ul className='list'>
-              <li>
-                <a className='social-icon' href='https://steamcommunity.com/id/sutangu/' target='_blank'
-                   rel="noopener noreferrer">
-                  <img className='icon' src={ image.steam } alt='steam' height='25px'/>
-                </a>
-              </li>
-              <li>
-                <a className='social-icon' href='https://welcome.playkey.net/lp/referral?ref=8305807' target='_blank'
-                   rel="noopener noreferrer">
-                  <img className='icon white-icon' src={ playkey } alt='playkey' height='25px'/>
-                </a>
-              </li>
-              <li>
-                <a className='social-icon' href='https://wakatime.com/@sutangu' target='_blank'
-                   rel="noopener noreferrer">
-                  <img className='icon' src={ image.wakatime } alt='wakatime' height='25px'/>
-                </a>
-              </li>
-              <li>
-                <a className='social-icon' href='https://github.com/sutangu' target='_blank' rel="noopener noreferrer">
-                  <img className='icon' src={ image.github } alt='github' height='25px'/>
-                </a>
-              </li>
-              <li>
-                <a className='social-icon lastfm' href='https://www.last.fm/ru/user/Cu-Real' target='_blank'
-                   rel="noopener noreferrer">
-                  <img className='icon' src={ lastfm } alt='lastfm' height='25px'/>
-                </a>
-              </li>
-              <li>
-                <a className='social-icon telegram' href='https://t.me/sutangu' target='_blank'
-                   rel="noopener noreferrer">
-                  <img className='icon' src={ telegram } alt='telegram-own' height='25px'/>
-                </a>
-              </li>
-              <li>
-                <a className='social-icon telegram -channel' href='https://t.me/whatreadnotread' target='_blank'
-                   rel="noopener noreferrer">
-                  <img className='icon' src={ telegram } alt='telegram-channel' height='25px'/>
-                </a>
-                <div className="letter">ch</div>
-              </li>
+              { this.getLinkList() }
             </ul>
           </div>
         </main>
