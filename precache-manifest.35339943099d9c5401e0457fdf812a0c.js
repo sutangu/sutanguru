@@ -1,27 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "729bb9e7cf52750290261833b48dd2f5",
+    "revision": "6cb9ff9fad1229ab2f3bf698d1722000",
     "url": "/index.html"
   },
   {
-    "revision": "475879331093f3b8b141",
-    "url": "/static/css/main.a7e202be.chunk.css"
+    "revision": "426b43a8b9d4bbea1bd9",
+    "url": "/static/css/main.6c932c62.chunk.css"
   },
   {
-    "revision": "d311f988101cdd37c3ce",
-    "url": "/static/js/2.f8d2d4de.chunk.js"
+    "revision": "c5ac495a2a918f60436e",
+    "url": "/static/js/2.bb8581f5.chunk.js"
   },
   {
     "revision": "501f379103cbfcb5ff11211dd39a28a2",
-    "url": "/static/js/2.f8d2d4de.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.bb8581f5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "475879331093f3b8b141",
-    "url": "/static/js/main.fb48e247.chunk.js"
+    "revision": "426b43a8b9d4bbea1bd9",
+    "url": "/static/js/main.7101e58d.chunk.js"
   },
   {
     "revision": "252806fb3dac803f40fd",
     "url": "/static/js/runtime-main.d6002c20.js"
+  },
+  {
+    "revision": "6a052e485ba32cdcbf53828c28b6694b",
+    "url": "/static/media/FontOfKindness2.0-Bold.6a052e48.woff"
+  },
+  {
+    "revision": "ca82a85770798e813c72dbb3fd4af548",
+    "url": "/static/media/FontOfKindness2.0-Bold.ca82a857.otf"
   },
   {
     "revision": "bf5685f79037eb4bff61407e367056ca",
