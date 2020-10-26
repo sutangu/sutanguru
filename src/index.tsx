@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import {Provider} from 'mobx-react';
+import { Provider } from 'mobx-react';
 import SutanguStore from './stores/SutanguStore';
 
 const Root = (
-    <Provider SutanguStore={SutanguStore}>
-        <App/>
-    </Provider>
+  <Provider SutanguStore={ SutanguStore }>
+    <App/>
+  </Provider>
 );
 
 ReactDOM.render(Root, document.getElementById('root'));
