@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'dobro';
+  src: url('./assets/fonts/dobro/FontOfKindness2.0-Bold.otf') format('otf'),
+  url('./assets/fonts/dobro/FontOfKindness2.0-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
