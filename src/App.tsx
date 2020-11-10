@@ -120,7 +120,9 @@ class App extends Component {
           <div className="wrap">
             <h1>{ tr('main.sutangu') }</h1>
             <h2>{ tr('main.subtitle') }
-              <a href="https://www.artlebedev.ru/sutangu/" target='_blank'>{ tr('main.subtitle_ALS') }</a>
+              <a href={ `${ tr('main.subtitle_ALS_link') }` } target='_blank' rel="noopener noreferrer">
+                { tr('main.subtitle_ALS') }
+              </a>
             </h2>
             <h3>{ tr('main.h3') }</h3>
 
