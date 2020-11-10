@@ -119,7 +119,9 @@ class App extends Component {
           <span className="launch-expect">{ tr('main.portal_launch_expect') }</span>
           <div className="wrap">
             <h1>{ tr('main.sutangu') }</h1>
-            <h2>{ tr('main.subtitle') } <a href="https://www.artlebedev.ru/sutangu/">{ tr('main.subtitle_ALS') }</a></h2>
+            <h2>{ tr('main.subtitle') }
+              <a href="https://www.artlebedev.ru/sutangu/" target='_blank'>{ tr('main.subtitle_ALS') }</a>
+            </h2>
             <h3>{ tr('main.h3') }</h3>
 
             <div className='email'>
