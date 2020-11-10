@@ -60,7 +60,7 @@ const socials: Social[] = [
   {
     classes: 'telegram -channel',
     label: 'ch',
-    href: 'https://steamcommunity.com/id/sutangu/',
+    href: 'https://t.me/whatreadnotread',
     img: {
       src: telegram,
       alt: 'telegram-channel'
