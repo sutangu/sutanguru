@@ -10,6 +10,7 @@ import image from './images/images64';
 import telegram from './images/telegram.svg'
 import lastfm from './images/last-fm-logo.svg'
 import playkey from './images/playkey.svg'
+import psn from './images/psn.png'
 
 const socials: Social[] = [
   {
@@ -17,6 +18,13 @@ const socials: Social[] = [
     img: {
       src: image.steam,
       alt: 'steam'
+    }
+  },
+  {
+    href: 'https://my.playstation.com/profile/cu-real',
+    img: {
+      src: psn,
+      alt: 'psn'
     }
   },
   {
