@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.6c932c62.chunk.css",
-    "main.js": "/static/js/main.50e30236.chunk.js",
-    "main.js.map": "/static/js/main.50e30236.chunk.js.map",
+    "main.js": "/static/js/main.4e388170.chunk.js",
+    "main.js.map": "/static/js/main.4e388170.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d6002c20.js",
     "runtime-main.js.map": "/static/js/runtime-main.d6002c20.js.map",
-    "static/js/2.bb8581f5.chunk.js": "/static/js/2.bb8581f5.chunk.js",
-    "static/js/2.bb8581f5.chunk.js.map": "/static/js/2.bb8581f5.chunk.js.map",
+    "static/js/2.12da2d09.chunk.js": "/static/js/2.12da2d09.chunk.js",
+    "static/js/2.12da2d09.chunk.js.map": "/static/js/2.12da2d09.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6fe5e6b054d4a066bf4025e878a7213a.js": "/precache-manifest.6fe5e6b054d4a066bf4025e878a7213a.js",
+    "precache-manifest.ae804055051b866e406ade047a5bf9ac.js": "/precache-manifest.ae804055051b866e406ade047a5bf9ac.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.6c932c62.chunk.css.map": "/static/css/main.6c932c62.chunk.css.map",
-    "static/js/2.bb8581f5.chunk.js.LICENSE.txt": "/static/js/2.bb8581f5.chunk.js.LICENSE.txt",
+    "static/js/2.12da2d09.chunk.js.LICENSE.txt": "/static/js/2.12da2d09.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/FontOfKindness2.0-Bold.ca82a857.otf",
     "static/media/last-fm-logo.svg": "/static/media/last-fm-logo.bf5685f7.svg",
     "static/media/playkey.svg": "/static/media/playkey.13b8dc7e.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d6002c20.js",
-    "static/js/2.bb8581f5.chunk.js",
+    "static/js/2.12da2d09.chunk.js",
     "static/css/main.6c932c62.chunk.css",
-    "static/js/main.50e30236.chunk.js"
+    "static/js/main.4e388170.chunk.js"
   ]
 }
