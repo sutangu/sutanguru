@@ -28,6 +28,14 @@ const socials: Social[] = [
     }
   },
   {
+    href: 'https://psnprofiles.com/cu-real',
+    label: 'pr',
+    img: {
+      src: psn,
+      alt: 'psn profiles'
+    }
+  },
+  {
     href: 'https://welcome.playkey.net/lp/referral?ref=8305807',
     img: {
       addClass: 'white-icon',
@@ -126,6 +134,9 @@ class App extends Component {
         <main className="page" data-theme={ SutanguStore.theme }>
           <span className="launch-expect">{ tr('main.portal_launch_expect') }</span>
           <div className="wrap">
+            <p className="intro">
+              Here will be website 'bout sutangu.
+            </p>
             <h1>{ tr('main.sutangu') }</h1>
             <h2>{ tr('main.subtitle') }
               <a href={ `${ tr('main.subtitle_ALS_link') }` } target='_blank' rel="noopener noreferrer">
@@ -144,10 +155,6 @@ class App extends Component {
                    alt="profile for Alexander Shtang at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
                    title="profile for Alexander Shtang at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
             </a>
-
-            <p className="intro">
-              Here will be website 'bout sutangu.
-            </p>
 
             <a href="https://myshows.me/Enclave88">
               <img src="https://u.myshows.me/u/23370.png" alt='https://myshows.me/Enclave88'/>
