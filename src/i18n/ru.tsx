@@ -1,4 +1,4 @@
-export default {
+const ru = {
   main: {
     sutangu: 'сутангу',
     subtitle: 'Opensourcænimous, работаю в ',
@@ -9,3 +9,4 @@ export default {
   }
 };
 
+export default ru;

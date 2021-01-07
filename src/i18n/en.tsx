@@ -1,4 +1,4 @@
-export default {
+const en = {
   main: {
     sutangu: 'sutangu',
     subtitle: 'Opensourcænimous, currently working at ',
@@ -8,3 +8,5 @@ export default {
     portal_launch_expect: 'The site is expected to launch ~ in 2025'
   }
 };
+
+export default en;
