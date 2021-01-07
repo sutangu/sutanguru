@@ -14,6 +14,7 @@ import psn from './images/psn.png'
 
 const socials: Social[] = [
   {
+    id: 1,
     href: 'https://steamcommunity.com/id/sutangu/',
     img: {
       src: image.steam,
@@ -21,6 +22,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 2,
     href: 'https://my.playstation.com/profile/cu-real',
     img: {
       src: psn,
@@ -28,6 +30,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 3,
     href: 'https://psnprofiles.com/cu-real',
     label: 'pr',
     img: {
@@ -36,6 +39,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 4,
     href: 'https://welcome.playkey.net/lp/referral?ref=8305807',
     img: {
       addClass: 'white-icon',
@@ -44,6 +48,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 5,
     classes: 'waka',
     href: 'https://wakatime.com/@sutangu',
     img: {
@@ -52,6 +57,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 6,
     classes: 'github',
     href: 'https://github.com/sutangu',
     img: {
@@ -60,6 +66,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 7,
     classes: 'lastfm',
     href: 'https://www.last.fm/ru/user/Cu-Real',
     img: {
@@ -68,6 +75,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 8,
     classes: 'telegram',
     href: 'https://t.me/sutangu',
     img: {
@@ -76,6 +84,7 @@ const socials: Social[] = [
     }
   },
   {
+    id: 9,
     classes: 'telegram -channel',
     label: 'ch',
     href: 'https://t.me/whatreadnotread',
@@ -96,7 +105,7 @@ class App extends Component {
 
   getLinkList = () => {
     return socials.map(social => (
-      <li>
+      <li key={social.id}>
         <a
           className={ `social-icon ${ social.classes }` }
           href={ social.href }

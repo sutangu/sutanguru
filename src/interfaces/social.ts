@@ -1,4 +1,5 @@
 export interface Social {
+  id: number;
   classes?: string;
   label?: string;
   href: string;
