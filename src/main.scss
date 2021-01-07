@@ -80,6 +80,8 @@ main {
 
         .lastfm {
           img {
+            border-radius: 2px;
+
             &:hover {
               background-color: #ba0000;
             }

@@ -4,4 +4,22 @@ main[data-theme='darker'] {
   h1, h2, h3, p, a, .letter {
     color: #fff;
   }
+
+  .wrap {
+    .list {
+      li {
+        .lastfm, .telegram {
+          img {
+            background-color: #fff;
+          }
+        }
+
+        .waka, .github {
+          img {
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
 }

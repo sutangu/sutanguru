@@ -44,6 +44,7 @@ const socials: Social[] = [
     }
   },
   {
+    classes: 'waka',
     href: 'https://wakatime.com/@sutangu',
     img: {
       src: image.wakatime,
@@ -51,6 +52,7 @@ const socials: Social[] = [
     }
   },
   {
+    classes: 'github',
     href: 'https://github.com/sutangu',
     img: {
       src: image.github,
