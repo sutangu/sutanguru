@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 
 import Header from './components/header'
-import './main.scss';
 import tr from './helpers/translator';
 import { Social } from './interfaces/social';
 
@@ -11,6 +10,8 @@ import telegram from './images/telegram.svg'
 import lastfm from './images/last-fm-logo.svg'
 import playkey from './images/playkey.svg'
 import psn from './images/psn.png'
+
+import './main.scss';
 
 const socials: Social[] = [
   {

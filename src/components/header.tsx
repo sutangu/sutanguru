@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
+
 import './header.scss';
 
 @inject('SutanguStore')
@@ -7,7 +8,6 @@ import './header.scss';
 class Header extends Component<any> {
   changeTheme = (event: any) => {
     event.preventDefault();
-    // @ts-ignore
     const { SutanguStore } = this.props;
     SutanguStore.changeTheme(event.currentTarget.value);
   };
