@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.a462106c.chunk.css",
-    "main.js": "/static/js/main.6efc1ed8.chunk.js",
-    "main.js.map": "/static/js/main.6efc1ed8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d6002c20.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d6002c20.js.map",
-    "static/js/2.541da558.chunk.js": "/static/js/2.541da558.chunk.js",
-    "static/js/2.541da558.chunk.js.map": "/static/js/2.541da558.chunk.js.map",
+    "main.css": "/static/css/main.51d4ab9a.chunk.css",
+    "main.js": "/static/js/main.4c285970.chunk.js",
+    "main.js.map": "/static/js/main.4c285970.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fe5f1c61.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fe5f1c61.js.map",
+    "static/js/2.9339f612.chunk.js": "/static/js/2.9339f612.chunk.js",
+    "static/js/2.9339f612.chunk.js.map": "/static/js/2.9339f612.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.275f075625bbac6e87384ac2a40a7689.js": "/precache-manifest.275f075625bbac6e87384ac2a40a7689.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.a462106c.chunk.css.map": "/static/css/main.a462106c.chunk.css.map",
-    "static/js/2.541da558.chunk.js.LICENSE.txt": "/static/js/2.541da558.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/FontOfKindness2.0-Bold.ca82a857.otf",
-    "static/media/last-fm-logo.svg": "/static/media/last-fm-logo.bf5685f7.svg",
-    "static/media/playkey.svg": "/static/media/playkey.13b8dc7e.svg",
-    "static/media/telegram.svg": "/static/media/telegram.b114a01f.svg"
+    "static/css/main.51d4ab9a.chunk.css.map": "/static/css/main.51d4ab9a.chunk.css.map",
+    "static/js/2.9339f612.chunk.js.LICENSE.txt": "/static/js/2.9339f612.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/FontOfKindness2.0-Bold.47ba705e.woff",
+    "static/media/last-fm-logo.8899dfac.svg": "/static/media/last-fm-logo.8899dfac.svg",
+    "static/media/playkey.480195fb.svg": "/static/media/playkey.480195fb.svg",
+    "static/media/telegram.7a86bb8e.svg": "/static/media/telegram.7a86bb8e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d6002c20.js",
-    "static/js/2.541da558.chunk.js",
-    "static/css/main.a462106c.chunk.css",
-    "static/js/main.6efc1ed8.chunk.js"
+    "static/js/runtime-main.fe5f1c61.js",
+    "static/js/2.9339f612.chunk.js",
+    "static/css/main.51d4ab9a.chunk.css",
+    "static/js/main.4c285970.chunk.js"
   ]
 }
