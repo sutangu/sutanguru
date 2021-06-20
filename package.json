@@ -2,12 +2,18 @@
   "name": "sutanguru",
   "version": "0.3.3",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.4",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
-    "gh-pages": "^3.2.2",
     "mobx": "^6.3.2",
     "mobx-react": "^7.2.0",
     "node-sass": "^6.0.0",
@@ -16,15 +22,11 @@
     "react-scripts": "^4.0.3",
     "typescript": "^4.3.4"
   },
+  "devDependencies": {
+    "gh-pages": "^3.2.2"
+  },
   "peerDependencies": {
     "eslint-plugin-flowtype": "^5.7.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
