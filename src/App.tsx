@@ -6,10 +6,10 @@ import tr from './helpers/translator';
 import { Social } from './interfaces/social';
 
 import image from './images/images64';
-import telegram from './images/telegram.svg'
-import lastfm from './images/last-fm-logo.svg'
-import playkey from './images/playkey.svg'
-import psn from './images/psn.png'
+import telegram from './images/telegram.svg';
+import lastfm from './images/last-fm-logo.svg';
+// import playkey from './images/playkey.svg'
+import psn from './images/psn.png';
 
 import './main.scss';
 
@@ -39,7 +39,7 @@ const socials: Social[] = [
       alt: 'psn profiles'
     }
   },
-  {
+  /*{
     id: 4,
     href: 'https://welcome.playkey.net/lp/referral?ref=8305807',
     img: {
@@ -47,7 +47,7 @@ const socials: Social[] = [
       src: playkey,
       alt: 'playkey'
     }
-  },
+  },*/
   {
     id: 5,
     classes: 'waka',
