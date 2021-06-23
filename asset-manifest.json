@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.202a3e4b.chunk.css",
-    "main.js": "/static/js/main.92471b1c.chunk.js",
-    "main.js.map": "/static/js/main.92471b1c.chunk.js.map",
+    "main.css": "/static/css/main.5f150bac.chunk.css",
+    "main.js": "/static/js/main.27d3a205.chunk.js",
+    "main.js.map": "/static/js/main.27d3a205.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2f8de36e.js",
     "runtime-main.js.map": "/static/js/runtime-main.2f8de36e.js.map",
     "static/js/2.f57c55fb.chunk.js": "/static/js/2.f57c55fb.chunk.js",
     "static/js/2.f57c55fb.chunk.js.map": "/static/js/2.f57c55fb.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.202a3e4b.chunk.css.map": "/static/css/main.202a3e4b.chunk.css.map",
+    "static/css/main.5f150bac.chunk.css.map": "/static/css/main.5f150bac.chunk.css.map",
     "static/js/2.f57c55fb.chunk.js.LICENSE.txt": "/static/js/2.f57c55fb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/FontOfKindness2.0-Bold.47ba705e.woff",
     "static/media/last-fm-logo.8899dfac.svg": "/static/media/last-fm-logo.8899dfac.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.2f8de36e.js",
     "static/js/2.f57c55fb.chunk.js",
-    "static/css/main.202a3e4b.chunk.css",
-    "static/js/main.92471b1c.chunk.js"
+    "static/css/main.5f150bac.chunk.css",
+    "static/js/main.27d3a205.chunk.js"
   ]
 }
