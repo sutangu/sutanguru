@@ -161,7 +161,7 @@ class App extends Component {
               <a href="mailto:me@sutangu.ru">me@sutangu.ru</a>
             </div>
 
-            <a href="https://stackoverflow.com/users/5266871/alexander-shtang" target='_blank'
+            <a className='stackoverflow' href="https://stackoverflow.com/users/5266871/alexander-shtang" target='_blank'
                rel="noopener noreferrer">
               <img src="https://stackoverflow.com/users/flair/5266871.png?theme=clean" width="208" height="58"
                    alt="profile for Alexander Shtang at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
