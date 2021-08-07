@@ -16,7 +16,7 @@ class Header extends Component<any> {
     const currLang = localStorage.getItem('lang');
 
     return (
-      <label className={ `${ currLang === lang ? 'selected' : null }` }>
+      <label tabIndex={0} className={ `${ currLang === lang ? 'selected' : null }` }>
         <input type="radio" name="chooseLang" onClick={ this.props.switchLang.bind(lang) } value={ lang }/>
         { lang.toUpperCase() }
       </label>
@@ -27,11 +27,11 @@ class Header extends Component<any> {
     return (
       <header>
         <div>
-          <label>
+          <label tabIndex={0}>
             <input type='radio' name='theme' value='darker' onChange={ this.changeTheme }/>
             darker
           </label>
-          <label>
+          <label tabIndex={0}>
             <input type='radio' name='theme' value='lighter' onChange={ this.changeTheme } defaultChecked={ true }/>
             lighter
           </label>
