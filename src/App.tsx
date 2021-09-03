@@ -168,7 +168,7 @@ class App extends Component {
                    title="profile for Alexander Shtang at Stack Overflow, Q&amp;A for professional and enthusiast programmers"/>
             </a>
 
-            <a href="https://myshows.me/Enclave88">
+            <a href="https://myshows.me/Enclave88" className="myshows">
               <img src="https://u.myshows.me/u/23370.png" alt='https://myshows.me/Enclave88'/>
             </a>
 
