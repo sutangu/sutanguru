@@ -39,6 +39,14 @@ const socials: Social[] = [
       alt: 'psn profiles'
     }
   },
+  {
+    id: 3,
+    href: 'https://www.goodreads.com/user/show/7471677-alexander-shtang',
+    img: {
+      src: image.goodreads,
+      alt: 'goodreads'
+    }
+  },
   /*{
     id: 4,
     href: 'https://welcome.playkey.net/lp/referral?ref=8305807',
