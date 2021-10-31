@@ -40,7 +40,7 @@ const socials: Social[] = [
     }
   },
   {
-    id: 3,
+    id: 4,
     href: 'https://www.goodreads.com/user/show/7471677-alexander-shtang',
     img: {
       src: image.goodreads,
