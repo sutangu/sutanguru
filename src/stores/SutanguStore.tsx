@@ -1,6 +1,6 @@
 import { action, makeAutoObservable } from 'mobx';
 
-class SutanguStore {
+export default class SutanguStore {
   theme = 'lighter';
 
   constructor() {
@@ -11,6 +11,3 @@ class SutanguStore {
     this.theme = theme;
   };
 }
-
-const store = new SutanguStore();
-export default store;

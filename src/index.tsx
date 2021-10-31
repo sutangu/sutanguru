@@ -6,10 +6,14 @@ import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 import { Provider } from 'mobx-react';
-import SutanguStore from './stores/SutanguStore';
+import rootStore from './stores/RootStore';
 
 const Root = (
-  <Provider SutanguStore={ SutanguStore }>
+  <Provider
+    RootStore={ rootStore }
+    SutanguStore={ rootStore.sutanguStore }
+    SocialNetworksStore={ rootStore.socialNetworksStore }
+  >
     <App/>
   </Provider>
 );

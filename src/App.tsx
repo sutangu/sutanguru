@@ -3,108 +3,11 @@ import { inject, observer } from 'mobx-react';
 
 import Header from './components/header'
 import tr from './helpers/translator';
-import { Social } from './interfaces/social';
-
-import image from './images/images64';
-import telegram from './images/telegram.svg';
-import lastfm from './images/last-fm-logo.svg';
-// import playkey from './images/playkey.svg'
-import psn from './images/psn.png';
 
 import './main.scss';
+import SocialNetworksStore from './stores/SocialNetworksStore';
 
-const socials: Social[] = [
-  {
-    id: 1,
-    href: 'https://steamcommunity.com/id/sutangu/',
-    img: {
-      src: image.steam,
-      alt: 'steam'
-    }
-  },
-  {
-    id: 2,
-    href: 'https://my.playstation.com/profile/cu-real',
-    img: {
-      src: psn,
-      alt: 'psn'
-    }
-  },
-  {
-    id: 3,
-    href: 'https://psnprofiles.com/cu-real',
-    label: 'pr',
-    img: {
-      src: psn,
-      alt: 'psn profiles'
-    }
-  },
-  {
-    id: 4,
-    href: 'https://www.goodreads.com/user/show/7471677-alexander-shtang',
-    img: {
-      src: image.goodreads,
-      alt: 'goodreads'
-    }
-  },
-  /*{
-    id: 4,
-    href: 'https://welcome.playkey.net/lp/referral?ref=8305807',
-    img: {
-      addClass: 'white-icon',
-      src: playkey,
-      alt: 'playkey'
-    }
-  },*/
-  {
-    id: 5,
-    classes: 'waka',
-    href: 'https://wakatime.com/@sutangu',
-    img: {
-      src: image.wakatime,
-      alt: 'wakatime'
-    }
-  },
-  {
-    id: 6,
-    classes: 'github',
-    href: 'https://github.com/sutangu',
-    img: {
-      src: image.github,
-      alt: 'github'
-    }
-  },
-  {
-    id: 7,
-    classes: 'lastfm',
-    href: 'https://www.last.fm/ru/user/Cu-Real',
-    img: {
-      src: lastfm,
-      alt: 'lastfm'
-    }
-  },
-  {
-    id: 8,
-    classes: 'telegram',
-    href: 'https://t.me/sutangu',
-    img: {
-      src: telegram,
-      alt: 'telegram-own'
-    }
-  },
-  {
-    id: 9,
-    classes: 'telegram -channel',
-    label: 'ch',
-    href: 'https://t.me/whatreadnotread',
-    img: {
-      src: telegram,
-      alt: 'telegram-channel'
-    }
-  },
-];
-
-@inject('SutanguStore')
+@inject('SutanguStore', 'SocialNetworksStore')
 @observer
 class App extends Component {
   switchLang = (event: any) => {
@@ -113,6 +16,8 @@ class App extends Component {
   };
 
   getLinkList = () => {
+    const socials = SocialNetworksStore.allSocialNetworks();
+
     return socials.map(social => (
       <li key={social.id}>
         <a
