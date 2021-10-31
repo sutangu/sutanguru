@@ -10,7 +10,7 @@ import SocialNetworksStore from './stores/SocialNetworksStore';
 @inject('SutanguStore', 'SocialNetworksStore')
 @observer
 class App extends Component {
-  switchLang = (event: any) => {
+  switchLang = (event: any): void => {
     localStorage.setItem('lang', event.currentTarget.value.toLowerCase());
     this.forceUpdate();
   };

@@ -7,5 +7,5 @@ export interface Social {
     addClass?: string;
     src: string;
     alt: string;
-  }
+  };
 }

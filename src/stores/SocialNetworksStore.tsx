@@ -11,16 +11,16 @@ export default class SocialNetworksStore {
       href: 'https://steamcommunity.com/id/sutangu/',
       img: {
         src: image.steam,
-        alt: 'steam'
-      }
+        alt: 'steam',
+      },
     },
     {
       id: 2,
       href: 'https://my.playstation.com/profile/cu-real',
       img: {
         src: psn,
-        alt: 'psn'
-      }
+        alt: 'psn',
+      },
     },
     {
       id: 3,
@@ -28,16 +28,16 @@ export default class SocialNetworksStore {
       label: 'pr',
       img: {
         src: psn,
-        alt: 'psn profiles'
-      }
+        alt: 'psn profiles',
+      },
     },
     {
       id: 4,
       href: 'https://www.goodreads.com/user/show/7471677-alexander-shtang',
       img: {
         src: image.goodreads,
-        alt: 'goodreads'
-      }
+        alt: 'goodreads',
+      },
     },
     /*{
       id: 4,
@@ -54,8 +54,8 @@ export default class SocialNetworksStore {
       href: 'https://wakatime.com/@sutangu',
       img: {
         src: image.wakatime,
-        alt: 'wakatime'
-      }
+        alt: 'wakatime',
+      },
     },
     {
       id: 6,
@@ -63,8 +63,8 @@ export default class SocialNetworksStore {
       href: 'https://github.com/sutangu',
       img: {
         src: image.github,
-        alt: 'github'
-      }
+        alt: 'github',
+      },
     },
     {
       id: 7,
@@ -72,8 +72,8 @@ export default class SocialNetworksStore {
       href: 'https://www.last.fm/ru/user/Cu-Real',
       img: {
         src: lastfm,
-        alt: 'lastfm'
-      }
+        alt: 'lastfm',
+      },
     },
     {
       id: 8,
@@ -81,8 +81,8 @@ export default class SocialNetworksStore {
       href: 'https://t.me/sutangu',
       img: {
         src: telegram,
-        alt: 'telegram-own'
-      }
+        alt: 'telegram-own',
+      },
     },
     {
       id: 9,
@@ -91,8 +91,8 @@ export default class SocialNetworksStore {
       href: 'https://t.me/whatreadnotread',
       img: {
         src: telegram,
-        alt: 'telegram-channel'
-      }
+        alt: 'telegram-channel',
+      },
     },
   ];
 

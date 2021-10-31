@@ -10,11 +10,11 @@ import rootStore from './stores/RootStore';
 
 const Root = (
   <Provider
-    RootStore={ rootStore }
-    SutanguStore={ rootStore.sutanguStore }
-    SocialNetworksStore={ rootStore.socialNetworksStore }
+    RootStore={rootStore}
+    SutanguStore={rootStore.sutanguStore}
+    SocialNetworksStore={rootStore.socialNetworksStore}
   >
-    <App/>
+    <App />
   </Provider>
 );
 
