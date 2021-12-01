@@ -2,6 +2,37 @@ header {
   display: flex;
   align-items: center;
 
+  .スタング {
+    background-color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    padding: .8rem;
+
+    .syllable {
+      &:first-child {
+        color: purple;
+      }
+      &:not(:first-child) {
+        color: yellow;
+        animation: colorchange 2000s infinite alternate;
+      }
+
+      @keyframes colorchange {
+        0% {
+          color: yellow;
+        }
+        50% {
+          color: #d35400;
+        }
+        100% {
+          color: #2980b9;
+        }
+      }
+    }
+  }
+
   label {
     font-size: 1.2rem;
     font-weight: 700;

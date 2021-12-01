@@ -6,6 +6,7 @@ import './header.scss';
 @inject('SutanguStore')
 @observer
 class Header extends Component<any, any> {
+  public sutangu = ['ス', 'タ', 'ン', 'グ'];
   changeTheme = (event: any): void => {
     event.preventDefault();
     const { SutanguStore } = this.props;
@@ -26,6 +27,14 @@ class Header extends Component<any, any> {
   render() {
     return (
       <header>
+        <div className="スタング">
+          {this.sutangu.map((letter, index) => (
+            <>
+              <span key={index} className="syllable" dangerouslySetInnerHTML={{ __html: letter }} />
+              {index % 2 ? <br /> : null}
+            </>
+          ))}
+        </div>
         <div>
           <label tabIndex={0}>
             <input type="radio" name="theme" value="darker" onChange={this.changeTheme} />
