@@ -11,8 +11,6 @@ const translator = (word: string) => {
   switch (lang) {
     case 'en':
       return splitter(word, en);
-    case 'ru':
-      return splitter(word, ru);
     default:
       return splitter(word, ru);
   }

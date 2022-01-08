@@ -5,7 +5,7 @@ import './header.scss';
 
 @inject('SutanguStore')
 @observer
-class Header extends Component<any> {
+class Header extends Component<any, any> {
   changeTheme = (event: any): void => {
     event.preventDefault();
     const { SutanguStore } = this.props;
@@ -16,16 +16,8 @@ class Header extends Component<any> {
     const currLang = localStorage.getItem('lang');
 
     return (
-      <label
-        tabIndex={0}
-        className={`${currLang === lang ? 'selected' : null}`}
-      >
-        <input
-          type="radio"
-          name="chooseLang"
-          onClick={this.props.switchLang.bind(lang)}
-          value={lang}
-        />
+      <label tabIndex={0} className={`${currLang === lang ? 'selected' : null}`}>
+        <input type="radio" name="chooseLang" onClick={this.props.switchLang.bind(lang)} value={lang} />
         {lang.toUpperCase()}
       </label>
     );
@@ -36,22 +28,11 @@ class Header extends Component<any> {
       <header>
         <div>
           <label tabIndex={0}>
-            <input
-              type="radio"
-              name="theme"
-              value="darker"
-              onChange={this.changeTheme}
-            />
+            <input type="radio" name="theme" value="darker" onChange={this.changeTheme} />
             darker
           </label>
           <label tabIndex={0}>
-            <input
-              type="radio"
-              name="theme"
-              value="lighter"
-              onChange={this.changeTheme}
-              defaultChecked={true}
-            />
+            <input type="radio" name="theme" value="lighter" onChange={this.changeTheme} defaultChecked={true} />
             lighter
           </label>
         </div>
