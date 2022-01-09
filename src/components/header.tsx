@@ -25,12 +25,14 @@ class Header extends Component<any, any> {
   };
 
   render() {
+    const { SutanguStore } = this.props;
+
     return (
-      <header>
+      <header data-theme={SutanguStore.theme}>
         <div className="スタング">
-          {this.sutangu.map((letter, index) => (
+          {this.sutangu.map((symbol, index) => (
             <>
-              <span key={index} className="syllable" dangerouslySetInnerHTML={{ __html: letter }} />
+              <span key={index} className="syllable" dangerouslySetInnerHTML={{ __html: symbol }} />
               {index % 2 ? <br /> : null}
             </>
           ))}
