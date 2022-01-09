@@ -21,7 +21,7 @@ class App extends Component<any, any> {
     const socials = SocialNetworksStore.allSocialNetworks();
 
     return socials.map((social) => (
-      <li key={social.id}>
+      <li key={social.id} title={social.img.alt}>
         <a className={`social-icon ${social.classes}`} href={social.href} target="_blank" rel="noopener noreferrer">
           <img className={`icon ${social.img.addClass} `} src={social.img.src} alt={social.img.alt} height="25px" />
         </a>
