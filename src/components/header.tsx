@@ -39,7 +39,7 @@ class Header extends Component<any, any> {
         </div>
         <div>
           <label tabIndex={0}>
-            <input type="radio" name="theme" value="darker" onChange={this.changeTheme} />
+            <input type="radio" name="theme" value="darker" onChange={this.changeTheme} onKeyPress={this.changeTheme} />
             darker
           </label>
           <label tabIndex={0}>
