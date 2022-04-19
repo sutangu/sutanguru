@@ -8,29 +8,29 @@ body {
 @import "lighter";
 
 main {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: calc(100vh - 22px);
+  height: calc(100vh - 116px);
 
   .launch-expect {
+    color: silver;
     font-family: 'Russo One', sans-serif;
     font-size: 6rem;
     font-weight: bolder;
-    color: silver;
-    z-index: 1;
+    padding-top: 1rem;
+    pointer-events: none;
     position: fixed;
     top: 0;
-    pointer-events: none;
-    padding-top: 1rem;
+    z-index: 1;
   }
 
   .wrap {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    z-index: 2;
     position: relative;
+    z-index: 2;
 
 
     h1 {
@@ -78,6 +78,7 @@ main {
         .social-icon {
           img {
             //border-radius: 100% 0 50% 50% / 50% 50% 50% 50%;
+            //border-radius: 100% 0 50% 0 / 0 50% 50% 50%;
 
             transition: all 140ms ease-in-out;
 
@@ -119,8 +120,8 @@ main {
 
         .letter {
           position: absolute;
-          top: -.5rem;
           right: -1.4rem;
+          top: -.5rem;
         }
       }
     }

@@ -6,7 +6,6 @@ import tr from './helpers/translator';
 
 import './main.scss';
 import SocialNetworksStore from './stores/SocialNetworksStore';
-import { Link } from "react-router-dom";
 
 @inject('SutanguStore', 'SocialNetworksStore')
 @observer
@@ -21,7 +20,7 @@ class App extends Component<any, any> {
     const socials = SocialNetworksStore.allSocialNetworks();
 
     return socials.map((social) => (
-      <li key={social.id}>
+      <li key={social.id} title={social.img.alt}>
         <a className={`social-icon ${social.classes}`} href={social.href} target="_blank" rel="noopener noreferrer">
           <img className={`icon ${social.img.addClass} `} src={social.img.src} alt={social.img.alt} height="25px" />
         </a>
@@ -90,12 +89,28 @@ class App extends Component<any, any> {
             <ul className="list">{this.getLinkList()}</ul>
             {steamFrom ? this.PGCode() : null}
 
-            <ul className='yandex-music-pls'>
+            <ul className="yandex-music-pls">
               My Yandex.Music playlists list:
-              <li><a href='https://music.yandex.ru/users/cu-real/playlists/1004' target='_blank' rel='noreferrer noopener'>7+</a></li>
-              <li><a href='https://music.yandex.ru/users/cu-real/playlists/1019' target='_blank' rel='noreferrer noopener'>Short Cool Songs and Melodies</a></li>
-              <li><a href='https://music.yandex.ru/users/cu-real/playlists/1017' target='_blank' rel='noreferrer noopener'>rap samples with originals</a></li>
-              <li><a href='https://music.yandex.ru/users/cu-real/playlists/1015' target='_blank' rel='noreferrer noopener'>wow-wow-wow</a></li>
+              <li>
+                <a href="https://music.yandex.ru/users/cu-real/playlists/1004" target="_blank" rel="noreferrer noopener">
+                  7+
+                </a>
+              </li>
+              <li>
+                <a href="https://music.yandex.ru/users/cu-real/playlists/1019" target="_blank" rel="noreferrer noopener">
+                  Short Cool Songs and Melodies
+                </a>
+              </li>
+              <li>
+                <a href="https://music.yandex.ru/users/cu-real/playlists/1017" target="_blank" rel="noreferrer noopener">
+                  rap samples with originals
+                </a>
+              </li>
+              <li>
+                <a href="https://music.yandex.ru/users/cu-real/playlists/1015" target="_blank" rel="noreferrer noopener">
+                  wow-wow-wow
+                </a>
+              </li>
             </ul>
           </div>
         </main>

@@ -9,5 +9,7 @@ export default class SutanguStore {
 
   @action changeTheme = (theme: string) => {
     this.theme = theme;
+    const rootNode = document.getElementById('root');
+    rootNode!.setAttribute('data-theme', theme);
   };
 }

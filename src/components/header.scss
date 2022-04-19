@@ -1,6 +1,38 @@
 header {
-  display: flex;
   align-items: center;
+  display: flex;
+
+  .スタング {
+    background-color: black;
+    font-family: Roboto, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5rem;
+    padding: .8rem;
+
+    .syllable {
+      &:first-child {
+        color: purple;
+      }
+
+      &:not(:first-child) {
+        animation: color-change 2000s infinite alternate;
+        color: yellow;
+      }
+
+      @keyframes color-change {
+        0% {
+          color: yellow;
+        }
+        50% {
+          color: #d35400;
+        }
+        100% {
+          color: #2980b9;
+        }
+      }
+    }
+  }
 
   label {
     font-size: 1.2rem;
@@ -9,9 +41,9 @@ header {
     transition: all 140ms ease-in-out;
 
     &:hover, &:focus-visible {
-      transition: all 140ms ease-in-out;
       color: beige;
       text-shadow: 1px 0 1px darkred;
+      transition: all 140ms ease-in-out;
     }
 
     &:active {
@@ -37,12 +69,12 @@ input[name="chooseLang"] {
 }
 
 .languages label {
-  cursor: pointer;
-  margin: .4rem;
-  font-size: 1.2rem;
-  text-decoration: none;
   color: var(--unselected-text);
+  cursor: pointer;
+  font-size: 1.2rem;
   font-weight: 600;
+  margin: .4rem;
+  text-decoration: none;
   text-transform: lowercase;
 }
 

@@ -1,6 +1,8 @@
-main[data-theme='darker'] {
+[data-theme='darker'] {
   background: linear-gradient(to right, #1f1f23, #35353c, #1f1f23);
+}
 
+main[data-theme='darker'] {
   h1, h2, h3, p, a, .letter {
     color: #fff;
   }
