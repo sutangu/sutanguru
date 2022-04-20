@@ -44,6 +44,8 @@ class App extends Component<any, any> {
     this.forceUpdate();
   };
 
+  yandexPlaylists = (): LinkList[] => this.state.yandexPlaylists;
+
   getLinkList = () => {
     const socials = SocialNetworksStore.allSocialNetworks();
 
@@ -119,8 +121,8 @@ class App extends Component<any, any> {
 
             <ul className="yandex-music-pls">
               My Yandex.Music playlists list:
-              {this.state.yandexPlaylists.map((playList) => (
-                <li>
+              {this.yandexPlaylists().map((playList) => (
+                <li key={playList.title}>
                   <a href={playList.link} dangerouslySetInnerHTML={{ __html: playList.title }} target="_blank" rel="noreferrer noopener" />
                 </li>
               ))}

@@ -1,4 +1,4 @@
-import React, { Component, ReactElement } from 'react';
+import React, { Component, Fragment, ReactElement } from 'react';
 import { inject, observer } from 'mobx-react';
 
 import './header.scss';
@@ -31,10 +31,10 @@ class Header extends Component<any, any> {
       <header data-theme={SutanguStore.theme}>
         <div className="スタング">
           {this.sutangu.map((symbol, index) => (
-            <>
-              <span key={index} className="syllable" dangerouslySetInnerHTML={{ __html: symbol }} />
+            <Fragment key={index}>
+              <span className="syllable" dangerouslySetInnerHTML={{ __html: symbol }} />
               {index % 2 ? <br /> : null}
-            </>
+            </Fragment>
           ))}
         </div>
         <div>
