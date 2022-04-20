@@ -7,9 +7,37 @@ import tr from './helpers/translator';
 import './main.scss';
 import SocialNetworksStore from './stores/SocialNetworksStore';
 
+interface LinkList {
+  link: string;
+  title: string;
+}
+
 @inject('SutanguStore', 'SocialNetworksStore')
 @observer
 class App extends Component<any, any> {
+  constructor(props) {
+    super(props);
+    this.state = {
+      yandexPlaylists: [
+        {
+          link: 'https://music.yandex.ru/users/cu-real/playlists/1004',
+          title: '7+',
+        },
+        {
+          link: 'https://music.yandex.ru/users/cu-real/playlists/1019',
+          title: 'Short Cool Songs and Melodies',
+        },
+        {
+          link: 'https://music.yandex.ru/users/cu-real/playlists/1017',
+          title: 'rap samples with originals',
+        },
+        {
+          link: 'https://music.yandex.ru/users/cu-real/playlists/1015',
+          title: 'wow-wow-wow',
+        },
+      ],
+    };
+  }
   // TODO <any, any> what?
   switchLang = (event: any): void => {
     localStorage.setItem('lang', event.currentTarget.value.toLowerCase());
@@ -91,26 +119,11 @@ class App extends Component<any, any> {
 
             <ul className="yandex-music-pls">
               My Yandex.Music playlists list:
-              <li>
-                <a href="https://music.yandex.ru/users/cu-real/playlists/1004" target="_blank" rel="noreferrer noopener">
-                  7+
-                </a>
-              </li>
-              <li>
-                <a href="https://music.yandex.ru/users/cu-real/playlists/1019" target="_blank" rel="noreferrer noopener">
-                  Short Cool Songs and Melodies
-                </a>
-              </li>
-              <li>
-                <a href="https://music.yandex.ru/users/cu-real/playlists/1017" target="_blank" rel="noreferrer noopener">
-                  rap samples with originals
-                </a>
-              </li>
-              <li>
-                <a href="https://music.yandex.ru/users/cu-real/playlists/1015" target="_blank" rel="noreferrer noopener">
-                  wow-wow-wow
-                </a>
-              </li>
+              {this.state.yandexPlaylists.map((playList) => (
+                <li>
+                  <a href={playList.link} dangerouslySetInnerHTML={{ __html: playList.title }} target="_blank" rel="noreferrer noopener" />
+                </li>
+              ))}
             </ul>
           </div>
         </main>
