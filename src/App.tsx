@@ -112,6 +112,14 @@ class App extends Component<any, any> {
               />
             </a>
 
+            <a className="stackoverflow" href="https://www.codewars.com/users/sutangu/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://www.codewars.com/users/sutangu/badges/large?theme=light"
+                alt="profile for Alexander Shtang at Codewars"
+                title="profile for Alexander Shtang at Codewars"
+              />
+            </a>
+
             <a href="https://myshows.me/Enclave88" className="myshows">
               <img src="https://u.myshows.me/u/23370.png" alt="https://myshows.me/Enclave88" />
             </a>
