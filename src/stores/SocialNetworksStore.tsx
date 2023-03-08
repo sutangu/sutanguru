@@ -1,8 +1,6 @@
 import { Social } from '../interfaces/social';
 import image from '../images/images64';
-import lastfm from '../images/last-fm-logo.svg';
 import psn from '../images/psn.png';
-import telegram from '../images/telegram.svg';
 
 export default class SocialNetworksStore {
   private static socialNetworks: Social[] = [
@@ -70,7 +68,7 @@ export default class SocialNetworksStore {
       id: 7,
       classes: 'lastfm',
       img: {
-        src: lastfm,
+        src: image.lastfm,
         alt: 'lastfm',
       },
       href: 'https://www.last.fm/ru/user/Cu-Real',
@@ -79,7 +77,7 @@ export default class SocialNetworksStore {
       id: 8,
       classes: 'telegram',
       img: {
-        src: telegram,
+        src: image.telegram,
         alt: 'telegram-own',
       },
       href: 'https://t.me/sutangu',
@@ -88,7 +86,7 @@ export default class SocialNetworksStore {
       id: 9,
       classes: 'telegram -channel',
       img: {
-        src: telegram,
+        src: image.telegram,
         alt: 'telegram-channel',
       },
       href: 'https://t.me/whatreadnotread',
