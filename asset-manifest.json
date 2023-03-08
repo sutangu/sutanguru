@@ -1,17 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.3627f1cb.css",
-    "main.js": "/static/js/main.d742796d.js",
+    "main.js": "/static/js/main.63ac2e6b.js",
     "static/media/FontOfKindness2.0-Bold.otf": "/static/media/FontOfKindness2.0-Bold.31566117ab948f2b6052.otf",
     "static/media/FontOfKindness2.0-Bold.woff": "/static/media/FontOfKindness2.0-Bold.47ba705e5f7228127aa3.woff",
     "index.html": "/index.html",
-    "static/media/last-fm-logo.svg": "/static/media/last-fm-logo.e77689c8e86fd3b9604221cc17031b62.svg",
-    "static/media/telegram.svg": "/static/media/telegram.491bf41f65c2f697ed2bd361736644c8.svg",
     "main.3627f1cb.css.map": "/static/css/main.3627f1cb.css.map",
-    "main.d742796d.js.map": "/static/js/main.d742796d.js.map"
+    "main.63ac2e6b.js.map": "/static/js/main.63ac2e6b.js.map"
   },
   "entrypoints": [
     "static/css/main.3627f1cb.css",
-    "static/js/main.d742796d.js"
+    "static/js/main.63ac2e6b.js"
   ]
 }
