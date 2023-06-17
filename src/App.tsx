@@ -28,10 +28,6 @@ class App extends Component<any, any> {
           title: 'Short Cool Songs and Melodies',
         },
         {
-          link: 'https://music.yandex.ru/users/cu-real/playlists/1017',
-          title: 'rap samples with originals',
-        },
-        {
           link: 'https://music.yandex.ru/users/cu-real/playlists/1015',
           title: 'wow-wow-wow',
         },
@@ -83,7 +79,6 @@ class App extends Component<any, any> {
         <main className="page" data-theme={SutanguStore.theme}>
           <span className="launch-expect">{tr('main.portal_launch_expect')}</span>
           <div className="wrap">
-            <p className="intro">Here will be website 'bout sutangu.</p>
             <h1>{tr('main.sutangu')}</h1>
             <h2>
               {tr('main.subtitle')}
@@ -128,7 +123,7 @@ class App extends Component<any, any> {
             {steamFrom ? this.PGCode() : null}
 
             <ul className="yandex-music-pls">
-              My Yandex.Music playlists list:
+              My Yandex Music playlists:
               {this.yandexPlaylists().map((playList) => (
                 <li key={playList.title}>
                   <a href={playList.link} dangerouslySetInnerHTML={{ __html: playList.title }} target="_blank" rel="noreferrer noopener" />
